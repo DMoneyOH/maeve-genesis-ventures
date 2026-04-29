@@ -371,3 +371,12 @@ The two products share the same infrastructure (Supabase, Vercel, Claude, Stripe
 
 [Full AI analysis →](./Ghost_AI_PARTNER_ANALYSIS.md)  
 *Analysis generated: 2026-04-28T04:56:51.984831*
+
+
+---
+
+## AI Partner Review
+
+Full AI partner analysis (Gemini + Groq): see [Ghost AI Analysis](./AI_PARTNER_ANALYSIS.md)
+
+*Analysis generated: 2026-04-29T02:42:09.199149*

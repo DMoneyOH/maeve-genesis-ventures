@@ -350,3 +350,12 @@ Do not proceed if:
 
 [Full AI analysis →](./Sentinel_AI_PARTNER_ANALYSIS.md)  
 *Analysis generated: 2026-04-28T04:55:40.836569*
+
+
+---
+
+## AI Partner Review
+
+Full AI partner analysis (Gemini + Groq): see [Sentinel AI Analysis](./AI_PARTNER_ANALYSIS.md)
+
+*Analysis generated: 2026-04-29T02:38:24.503187*
