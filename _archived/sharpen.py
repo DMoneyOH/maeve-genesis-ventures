@@ -14,8 +14,6 @@ LOG = '/home/derek/vault/MaeveGenesis/logs/sharpening.log'
 VENTURES = '/home/derek/vault/MaeveGenesis/ventures'
 SENTINEL_DOC = f'{VENTURES}/sentinel/BUSINESS_CASE.md'
 GHOST_DOC = f'{VENTURES}/ghost/BUSINESS_CASE.md'
-CREDS = '/home/derek/vault/utils/.claude-mcp-servers/multi-ai-collab/credentials.json'
-
 def log(msg):
     ts = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     line = f'[{ts}] {msg}'
@@ -23,10 +21,8 @@ def log(msg):
     with open(LOG, 'a') as f: f.write(line + '\n')
 
 def get_api_keys():
-    with open(CREDS) as f:
-        d = json.load(f)
-    gemini = d['gemini']['api_key'] if isinstance(d['gemini'], dict) else d['gemini']
-    groq_key = d['groq']['api_key'] if isinstance(d.get('groq',{}), dict) else d.get('groq')
+    gemini = get_secret('GEMINI_API_KEY')
+    groq_key = get_secret('GROQ_API_KEY')
     return gemini, groq_key
 
 def call_gemini(api_key, prompt, retries=8):
